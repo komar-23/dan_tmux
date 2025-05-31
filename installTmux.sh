@@ -12,3 +12,7 @@ else
   cp ${HOME}/.tmux.conf ${HOME}/.tmux.conf.bkp
   cp ./.tmux.conf ${HOME}/.tmux.conf
 fi
+
+${HOME}/.tmux/plugins/tpm/bin/install_plugins
+
+echo "Installation complete."
