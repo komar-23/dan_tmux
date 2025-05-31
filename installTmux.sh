@@ -1,5 +1,9 @@
 #!/bin/bash
 #Script prepares my custom ZSH distribution
+if [ ! -d "${HOME}/.tmux/plugins/tpm/" ] ; then
+  mkdir -p "${HOME}/.tmux/plugins/tpm"
+  git clone https://github.com/tmux-plugins/tpm ${HOME}/.tmux/plugins/tpm 
+fi
 
 if [ ! -f "${HOME}/.tmux.conf" ] ; then
   cp ./.tmux.conf ${HOME}/.tmux.conf
