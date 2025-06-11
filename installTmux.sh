@@ -6,11 +6,11 @@ if [ ! -d "${HOME}/.tmux/plugins/tpm/" ] ; then
 fi
 
 if [ ! -f "${HOME}/.tmux.conf" ] ; then
-  cp ./.tmux.conf ${HOME}/.tmux.conf
+  cp ./.tmux-catppuccin.conf ${HOME}/.tmux.conf
 else
   echo '.tmux.conf file exist, backup has been created as a .tmux.conf.bkp file'
   cp ${HOME}/.tmux.conf ${HOME}/.tmux.conf.bkp
-  cp ./.tmux.conf ${HOME}/.tmux.conf
+  cp ./.tmux-catppuccin.conf ${HOME}/.tmux.conf
 fi
 
 ${HOME}/.tmux/plugins/tpm/bin/install_plugins
