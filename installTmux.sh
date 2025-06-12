@@ -1,6 +1,6 @@
 #!/bin/bash
 #Script prepares my custom ZSH distribution
-echo 'TMUX installer'
+echo 'TMUX customization installer'
 
 if [ ! -d "${HOME}/.tmux/plugins/tpm/" ] ; then
   echo 'TPM installation...'
@@ -60,4 +60,4 @@ while true ; do
 done
 
 
-echo 'TMUX Installation process completed'
+echo 'TMUX customization process completed'
